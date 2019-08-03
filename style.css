@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #6092a1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: #eee;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.container {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+  margin: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,.2);
+}
+
+/* NEW TASK */
+.new-task {
+  background: #ff9f9f;
+  height: 4rem;
+  padding: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.new-task input{
+  background: 	#c98990;
+  color: #fff;
+  font-size: 1rem;
+  text-indent: 1rem;
+  width: 100%;
+  height: 2rem;
+  float: left;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.new-task button {
+  background: #fff;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 15px;
+  border-radius: 25px; 
+  border: none;
+  outline: none;
+
+  transition: all 0.35s ease;
+}
+
+.new-task button:hover {
+  color: #ff9f9f;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ITEMS */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  color: #333;
+  background: #FFF;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  line-height: 2.8;
+}
+
+.item:hover a {
+  width: 40px;
+  opacity: 1;
+}
+
+.item:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+.item:hover {
+  background: #eee;
+}
+
+/* Delete Button */
+.delete {
+  color: 	#fff;
+  float: right;
+  text-align: center;
+  height: 40px;
+  background: #f05858;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.delete:hover {
+  background: #c0392b;
+}
+
+/* Checkbox */
+.completed {
+  margin-right: 15px;
+}
